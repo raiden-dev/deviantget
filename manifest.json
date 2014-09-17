@@ -1,0 +1,27 @@
+{
+  "name": "Deviantart Gallery Collector",
+  "version": "0.1.0",
+  "description": "Collects all the urls of Deviantart.com user's gallery.",
+  "icons": {
+    "128": "icon.png"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*.deviantart.com/gallery/*"],
+      "js": ["content_gallery.js"]
+    }
+  ],
+  "permissions": [
+    "clipboardWrite",
+    "http://*.deviantart.com/"
+  ],
+  "page_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 2
+}

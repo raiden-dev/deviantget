@@ -1,0 +1,34 @@
+html, body {
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+}
+
+.queue {
+  margin: 0;
+  padding: 0;
+}
+
+.queue__item {
+  margin: 15px 0;
+}
+
+.queue__item__title {
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.queue__item__status {
+  font-style: italic;
+}
+
+.wrapper {
+  width: 250px;
+}
+
+.about {
+  text-align: right;
+  font-size: 10px;
+}

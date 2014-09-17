@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" type="text/css" href="popup.css">
+
+<script id="queue-item" type="text/x-template">
+  {{#queue}}
+    <li class="queue__item">
+      <h2 class="queue__item__title">
+        {{title}}
+      </h2>
+
+      <div class="queue__item__content">
+        {{#isComplete}}
+          {{#isCopied}}
+            <i>Copied.</i>
+          {{/isCopied}}
+
+          {{^isCopied}}
+            <i>Done.</i>
+          {{/isCopied}}
+
+          <a href="#" data-id="{{id}}">Copy to clipboard</a>
+        {{/isComplete}}
+
+        {{^isComplete}}
+          <i>Collecting&hellip;</i>
+        {{/isComplete}}
+      </div>
+    </li>
+  {{/queue}}
+</script>
+
+<div class="wrapper">
+  <ul id="queue" class="queue"></ul>
+
+  <div class="about">
+    Made for <b>kernel_panic</b> with &lt;3<br>
+    MIT Licensed. <a href="http://github.com/raiden-dev/deviantget" target="_blnk">Github</a>
+  </div>
+</div>
+
+<script src="mustache.min.js"></script>
+<script src="popup.js"></script>
