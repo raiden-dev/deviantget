@@ -1,0 +1,11 @@
+{
+  "name": "deviantget",
+  "description": "Collect all urls of Deviantart.com user's gallery",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "crx pack src/ -o dist/deviantget.crx"
+  },
+  "devDependencies": {
+    "crx": "^3.0.2"
+  }
+}

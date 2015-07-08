@@ -1,4 +1,4 @@
-# <a href="#-deviantget-v010"><img src="https://raw.githubusercontent.com/raiden-dev/deviantget/master/icon.png" width="64" height="64" align="absmiddle"></a> deviantget v0.1.0
+# <a href="#-deviantget-v010"><img src="https://raw.githubusercontent.com/raiden-dev/deviantget/master/src/icon.png" width="64" height="64" align="absmiddle"></a> deviantget v0.1.0
 
 > Deviantart Gallery Collector
 
@@ -7,7 +7,9 @@ Chrome extension for collecting urls to Deviantart.com user's gallery downloadab
 
 ## Installation
 
-Here will be link to _crx_ soon. But now, clone or [download](https://github.com/raiden-dev/deviantget/archive/master.zip) the repo, unpack it to some place and use "Load unpacked extension" feature on Settings/Extensions Chrome's tab. Choose directory with the extension and hit the "Open" button next. The brand new extension should appear at top of your extensions list.
+Download [crx package](https://raw.githubusercontent.com/rd5/deviantget/master/dist/deviantget.crx) then drag and drop it to Settings/Extensions chrome tab.  
+
+For developer's installation, clone or [download](https://github.com/raiden-dev/deviantget/archive/master.zip) the repo, unpack it to some place and use "Load unpacked extension" feature on Settings/Extensions сhrome tab. Choose directory with the extension and hit the "Open" button next. The brand new extension should appear at top of your extensions list.
 
 
 ## Using
