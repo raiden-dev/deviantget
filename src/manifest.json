@@ -1,7 +1,7 @@
 {
   "name": "Deviantart Gallery Collector",
   "version": "0.1.0",
-  "description": "Collects all the urls of Deviantart.com user's gallery.",
+  "description": "Collect all source file urls from Deviantart.com user's gallery",
   "icons": {
     "128": "icon.png"
   },

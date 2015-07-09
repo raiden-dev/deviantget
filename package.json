@@ -1,7 +1,8 @@
 {
   "name": "deviantget",
-  "description": "Collect all urls of Deviantart.com user's gallery",
+  "description": "Collect all source file urls from Deviantart.com user's gallery",
   "version": "0.1.0",
+  "repository": "git@github.com:rd5/deviantget.git",
   "scripts": {
     "build": "crx pack src/ -o dist/deviantget.crx"
   },
