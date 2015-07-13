@@ -4,9 +4,10 @@
   "version": "0.1.0",
   "repository": "git@github.com:rd5/deviantget.git",
   "scripts": {
-    "build": "crx pack src/ -o dist/deviantget.crx"
+    "build": "cp node_modules/mustache/mustache.min.js src/mustache.min.js && crx pack src/ -o dist/deviantget.crx"
   },
   "devDependencies": {
-    "crx": "^3.0.2"
+    "crx": "^3.0.2",
+    "mustache": "^2.1.2"
   }
 }
