@@ -17,6 +17,7 @@
   ],
   "permissions": [
     "clipboardWrite",
+    "downloads",
     "http://*.deviantart.com/"
   ],
   "page_action": {

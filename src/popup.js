@@ -31,11 +31,19 @@ var render = function () {
 queueNode.addEventListener('click', function (e) {
   var el = e.target,
       item;
-
+      
   if (el.dataset.id) {
     item = queue[el.dataset.id];
-    urls = item.downloadUrls.join('\n');
-    executeCopy(urls);
+    //console.trace(item);
+    var ccontent = ""
+    for (var i = 0; i < item.downloadUrls.length; i++)
+    {
+        if (e.target.class == "download") {
+            chrome.downloads.download({url: item.downloadUrls[i][0]});
+        }
+        ccontent += item.downloadUrls[i].join('\t') + '\n';
+    }
+    executeCopy(ccontent);
     item.isCopied = true;
 
     render();

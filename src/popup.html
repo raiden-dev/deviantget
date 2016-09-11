@@ -19,7 +19,8 @@
             <i>Done.</i>
           {{/isCopied}}
 
-          <a href="#" data-id="{{id}}">Copy to clipboard</a>
+          <a class="copy" href="#" data-id="{{id}}">Copy to clipboard</a>
+          <a class="download" href="#" data-id="{{id}}">Copy and download ALL</a>
         {{/isComplete}}
 
         {{^isComplete}}

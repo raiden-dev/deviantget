@@ -63,10 +63,18 @@ chrome.runtime.onMessage.addListener(function(request, sender) {
 
     itemUrls.forEach(function (url, index) {
       getUrlDocument(url).then(function (dom) {
+        //console.trace("Fetched:" + url);
         var downloadButton = dom.querySelector('.dev-page-download');
-
+        var titleLabel = dom.querySelector("h1 a").innerText;
+        var dateLabel = dom.querySelector("dd span").innerText;
+        
         if (downloadButton) {
-          gallery.downloadUrls.push(downloadButton.href);
+            var values = [downloadButton.href, url, titleLabel];
+            var date = new Date(dateLabel);
+            var ds = date.toISOString();
+            ds = ds.substring(0, ds.indexOf("T"))
+            values.push(ds)
+            gallery.downloadUrls.push(values);
         }
 
         if (index === itemUrls.length - 1) {
